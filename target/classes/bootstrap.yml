@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: ciifm-config-service
+  cloud:
+    config:
+      label: master
+      profile: dev
+      server:
+        git:
+          #uri: https://github.com/ciifm/maven-repo-private
+          uri: https://github.com/ciifm/ciifm-personal-platform/tree/master/ciifm-personal-admin/ciifm-personal-admin-app/src/main/resources
+          username: ciifm
+          password: Gm152688
+          search-paths: config
+server:
+  port: 8888
